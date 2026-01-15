@@ -1,3 +1,5 @@
+#[cfg(not(feature = "std"))]
+use crate::float::FloatExt;
 use crate::float::Ordf32;
 use core::ops::{Add, Sub};
 
