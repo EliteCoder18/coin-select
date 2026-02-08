@@ -1,3 +1,7 @@
+# Unreleased
+
+- Fix compilation error when building with `--no-default-features` (#36)
+
 # 0.4.0
 
 - Use `u64` for weights instead of u32
