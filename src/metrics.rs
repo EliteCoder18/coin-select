@@ -65,7 +65,7 @@ macro_rules! impl_for_tuple {
             }
             #[allow(unused)]
             fn requires_ordering_by_descending_value_pwu(&self) -> bool {
-                [$(self.$b.0.requires_ordering_by_descending_value_pwu()),*].iter().all(|x| *x)
+                [$(self.$b.0.requires_ordering_by_descending_value_pwu()),*].iter().any(|x| *x)
             }
         }
     };
